@@ -7,3 +7,14 @@
 // 5. A button named 'Clear' that removes the populated list from the screen
 // 6. The application should be designed to be visually pleasing. 
 // Note: Do not spend too much time on design. Focus primarily on functionality(i.e. steps 1-5).
+
+let nameList = ['Ahmad', 'Conner', 'Amanda', 'Lily', 'Nhat', 'Solomon', 'Leroy', 'Kathryn', 'Jaida', 'Hanna'];
+
+
+document.querySelector("#gen-button").addEventListener("click", generate);
+
+function generate() {
+    for (let i = 0; i < 3; i++) {
+    return document.querySelector("#uNameInput").value = nameList[Math.floor(Math.random() * nameList.length)];
+    }
+}
